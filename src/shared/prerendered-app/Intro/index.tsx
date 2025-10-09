@@ -227,6 +227,29 @@ export default class Intro extends Component<Props, State> {
   ) {
     return (
       <div class={style.intro}>
+        <div
+          class={style.contentPadding}
+          style={{ marginTop: '2rem', marginBottom: '1rem' }}
+        >
+          <a
+            href="https://www.image-bee.com?utm_source=squoosh.app&utm_medium=referral&utm_campaign=image-bee-ad"
+            target="_blank"
+            aria-label="Friend link: Visit Image Bee image editing tool (free, no registration)"
+            class={style.friendLink}
+          >
+            <div class={style.friendLinkContent}>
+              <div class={style.friendLinkMain}>
+                <span class={style.friendLinkBadge}>Friend Link</span>
+                <span class={style.friendLinkTitle}>
+                  Image Bee · Image editing tool — free, no registration
+                </span>
+              </div>
+              <span class={style.friendLinkUrl} style={{ fontSize: '1.2rem' }}>
+                www.image-bee.com
+              </span>
+            </div>
+          </a>
+        </div>
         <input
           class={style.hide}
           multiple
